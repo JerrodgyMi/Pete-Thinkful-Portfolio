@@ -86,15 +86,15 @@ hr {
 }
 
 #about ul {
-  list-style-position: outside;  /* bullet outside the text block */
-  padding-left: 20px;            /* space for bullets */
-  margin: 5px 0;                 /* tight spacing above/below the list */
+  list-style: disc outside;      /* bullet outside the text block */
+  padding-left: 30px;            /* space for bullets */
+  margin: 5px 0;                 /* space above and below the list */
 }
 
 /* Individual list items */
 #about ul li {
   margin: 0;                     /* remove extra spacing after each item */
-  line-height: 1.4;              /* keep text compact */
+  line-height: 1.4;              /* tighter line spacing */
 }
 /* Layout for the top part (image + intro) */
 .about-top {
