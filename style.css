@@ -84,7 +84,16 @@ hr {
   text-align: center;
   margin-bottom: 40px;
 }
+#about ul {
+  padding-left: 20px;      /* distance from left edge; adjust as needed */
+  margin: 10px 0;          /* space above and below the entire list */
+  list-style-position: inside; /* moves bullets closer to text */
+}
 
+#about ul li {
+  margin: 0;               /* remove extra spacing below each bullet */
+  line-height: 1.4;        /* optional: tighter line height */
+}
 /* Layout for the top part (image + intro) */
 .about-top {
   display: flex;
