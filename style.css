@@ -87,7 +87,27 @@ hr {
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+.about-top {
+  display: flex;
+  align-items: center;      /* vertically center the text next to image */
+  gap: 20px;                /* space between image and text */
+}
 
+/* Make the image circular and fixed size */
+.about-image {
+  border-radius: 50%;
+  border: 2px solid #003049;
+  width: 150px;             /* adjust as desired */
+  height: 150px;            /* ensures circle shape */
+  object-fit: cover;        /* prevents distortion */
+  flex-shrink: 0;           /* prevents image from resizing */
+}
+
+/* Text next to image */
+.about-text {
+  flex: 1;                  /* take remaining space */
+  text-align: left;         /* align text naturally */
+}
 /* About Section Headings */
 #about h2 {
   text-align: center;         /* center "About" */
