@@ -80,35 +80,57 @@ hr {
 /* ===== ABOUT SECTION ===== */
 /* ABOUT SECTION */
 /* Center the h2 "About" */
+#about {
+  max-width: 800px;          /* optional: control width */
+  margin: 0 auto;            /* center on the page */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* About Section Headings */
 #about h2 {
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: center;         /* center "About" */
+  margin-bottom: 30px;
 }
 
-/* Remove extra margin at the bottom of the list */
+#about .about-top h3 {
+  text-align: left;           /* aligns "Hi! I'm Pete Thinkful" */
+  margin-bottom: 15px;
+  padding-left: 0;            /* optional if needed */
+}
+
+/* Paragraphs */
+#about p {
+  margin: 10px 0;             /* spacing between paragraphs */
+  text-align: left;
+}
+
+/* Bullet Lists */
 #about ul {
-  margin-bottom: 5px; /* reduces space after the bullets */
-  padding-left: 30px; /* keeps bullets aligned */
+  list-style: disc outside;   /* bullets outside the text block */
+  padding-left: 30px;         /* aligns bullets with text */
+  margin: 5px 0;              /* tight spacing above/below list */
 }
 
-/* Optional: adjust margin for paragraph following the list */
+/* Individual List Items */
+#about ul li {
+  margin: 0;                  /* remove extra spacing */
+  line-height: 1.4;           /* tighter line spacing */
+}
+
+/* Reduce space between bullets and following paragraph */
 #about ul + p {
-  margin-top: 8px; /* reduces space between the list and this paragraph */
-}
-/* Layout for the top part (image + intro) */
-.about-top {
-  display: flex;
-  align-items: center; /* vertically center the image and text */
-  justify-content: space-between;
-  flex-wrap: wrap; /* allows stacking on small screens */
-  gap: 20px;
+  margin-top: 5px;            /* pulls text closer to the list */
 }
 
-/* Center the image */
-.about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+/* Optional: adjust images in about section */
+#about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 15px 0;
 }
 
 /* Right-side text block */
