@@ -126,43 +126,29 @@ hr {
 /* ===== PORTFOLIO SECTION ===== */
 /* Portfolio section wrapper */
 /* Portfolio container */
+/* Portfolio section container */
 .portfolio-section {
   display: flex;
-  flex-direction: row; /* horizontal alignment */
-  justify-content: center; /* centers the row within the page */
-  align-items: flex-start; /* aligns items along the top edge */
-  gap: 30px; /* space between each project */
-  overflow-x: auto; /* optional: allows horizontal scrolling if items overflow */
-  padding: 20px 0;
+  flex-direction: row;       /* arrange items horizontally */
+  justify-content: center;   /* center them as a group */
+  align-items: flex-start;   /* align along the top */
+  flex-wrap: nowrap;         /* prevent wrapping to the next line */
+  gap: 30px;                 /* space between each project */
 }
 
-/* Each project item */
+/* Each project card */
 .project {
-  flex: 0 0 300px; /* fixed width; don't shrink or grow */
+  flex: 0 0 auto;            /* keep each project its natural width */
   text-align: center;
 }
 
 /* Image styling */
 .project img {
-  width: 100%;
+  display: block;
+  width: 250px;              /* adjust width as you like */
   height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
-}
-
-/* Optional: consistent card look */
-.project {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.project img {
-  display: block;
-  margin: 0 auto 10px;
-  max-width: 160px;
-  height: auto;
 }
 
 /* CONTACT & FOOTER */
