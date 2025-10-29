@@ -8,13 +8,13 @@ body {
   background-color: #eae2b7;
 }
 
-/* Set the font family for any h1, h2, or h3 heading */
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between; /* places h1 on the left, nav on the right */
   align-items: center; /* vertically centers them */
-  width: 600px; /* match your main content width */
-  margin: 0 auto; /* center the header on the page */
+  width: 600px; /* match main content width */
+  margin: 0 auto; /* center the header */
   padding-bottom: 20px;
 }
 
@@ -25,12 +25,23 @@ h3 {
   text-align: center;
 }
 
+/* Navigation bar horizontally aligned */
 nav ul {
   list-style: none;
   display: flex;
   gap: 30px;
   margin: 0;
   padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #003049;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f77f00;
 }
 
 article {
@@ -41,14 +52,24 @@ article div {
   text-align: center;
   width: 100%;
 }
-a:link {color: #d62828;}
-a:hover {color: #f77f00;}
+
+a:link {
+  color: #d62828;
+}
+
+a:hover {
+  color: #f77f00;
+}
+
 p {
   line-height: 1.5;
 }
-footer p{text-align: center;}
 
-/* The div container constrains the content width within the main container to 600px */
+footer p {
+  text-align: center;
+}
+
+/* Constrain main content width */
 div {
   margin: auto;
   width: 600px;
@@ -64,15 +85,72 @@ hr {
   border: 2px solid #003049;
 }
 
-/* Add your solution below */
-
+/* Pete's circular image */
 .image-circle {
   display: block;
   margin: 0 auto;
-border-radius: 50%;
+  border-radius: 50%;
   border: 2px solid #003049;
-} 
-img {
-  display: block;
+}
+
+/* ABOUT SECTION DESIGN UPDATE */
+#about {
+  width: 600px;
   margin: 0 auto;
+  padding: 40px 0;
+}
+
+.about-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-image {
+  flex: 0 0 auto;
+}
+
+.about-background {
+  margin-top: 30px;
+}
+
+/* PORTFOLIO SECTION DESIGN UPDATE */
+#portfolio {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 14px; /* Changed font size */
+  padding: 40px 0;
+}
+
+.portfolio-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+.project {
+  flex: 1;
+  min-width: 160px;
+}
+
+.project img {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* CONTACT & FOOTER */
+#contact {
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
 }
