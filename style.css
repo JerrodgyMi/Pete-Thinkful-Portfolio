@@ -85,40 +85,41 @@ hr {
   margin-bottom: 40px;
 }
 
-/* Flexbox layout for the section */
+/* Layout for the top part (image + intro) */
 .about-top {
   display: flex;
-  align-items: center; /* vertically aligns items */
-  justify-content: space-between; /* space between left and right */
+  align-items: center; /* vertically center the image and text */
+  justify-content: space-between;
+  flex-wrap: wrap; /* allows stacking on small screens */
   gap: 20px;
 }
 
-/* About image styling */
+/* Center the image */
 .about-image {
   flex: 1;
   display: flex;
   justify-content: center;
 }
 
-/* Right-side text block (Hi! I'm Pete Thinkful) */
+/* Right-side text block */
 .about-text {
   flex: 1;
-  text-align: center; /* keep content centered within the right column */
-  align-self: flex-start; /* optional: keeps it aligned with top of image */
+  text-align: center; /* centers text under "Hi! I'm Pete Thinkful" */
 }
 
-/* Align the "Hi! I'm Pete Thinkful" to the far right */
+/* Move "Hi! I'm Pete Thinkful" header to the far right */
 .about-text h3 {
   text-align: right;
 }
 
-/* Pete's Background section aligned with About heading vertically */
+/* Background section below */
 .about-background {
-  flex: 1;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .about-background h3 {
-  text-align: center; /* center "Pete's Background" under About */
+  margin-bottom: 15px;
 }
 
 
