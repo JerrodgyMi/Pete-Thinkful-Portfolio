@@ -1,40 +1,166 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
 /* ABOUT SECTION DESIGN UPDATE */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+
+body {
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  background-color: #eae2b7;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between; /* h1 on left, nav on right */
+  align-items: center;            /* vertically center both */
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Times, serif;
+}
+
+/* Horizontally aligned nav bar */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #003049;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f77f00;
+}
+
+a:link {
+  color: #d62828;
+}
+
+a:hover {
+  color: #f77f00;
+}
+
+p {
+  line-height: 1.5;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* Content width container */
+div {
+  margin: auto;
+  width: 600px;
+}
+
+hr {
+  border: 2px solid #003049;
+}
+
+/* Pete’s circular image */
+.image-circle {
+  border-radius: 50%;
+  border: 2px solid #003049;
+  display: block;
+  margin: 0 auto;
+  max-width: 180px;
+}
+
+/* ===== ABOUT SECTION ===== */
 #about {
   width: 600px;
   margin: 0 auto;
   padding: 40px 0;
 }
 
-/* Container for Pete’s image and intro text */
+/* Container for About title, text, and image */
 .about-top {
   display: flex;
-  flex-direction: row-reverse; /* ⬅️ flips order so image is on the left */
-  justify-content: center;     /* center horizontally */
-  align-items: center;         /* center vertically */
+  flex-direction: row-reverse; /* image left, text right */
+  justify-content: center;
+  align-items: center;
   gap: 30px;
   text-align: left;
+  position: relative;
 }
 
-/* Each side shares center space evenly */
-.about-text,
-.about-image {
+/* Align “About” heading inline with intro text */
+.about-text {
   flex: 1;
 }
 
-/* Image styling */
-.about-image img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 2px solid #003049;
-  max-width: 180px;
-  height: auto;
+.about-text h2 {
+  text-align: left;
+  margin-bottom: 10px;
 }
 
-/* Pete’s background section below */
+.about-text h3 {
+  text-align: left;
+  margin-top: 0;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-background {
   margin-top: 30px;
   text-align: left;
 }
+
+/* ===== PORTFOLIO SECTION ===== */
+#portfolio {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 14px;
+  padding: 40px 0;
+}
+
+/* Display all project items on one row */
+.portfolio-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: center;
+  flex-wrap: nowrap; /* Force single row */
+}
+
+/* Each project shows image + text vertically stacked inside */
+.project {
+  flex: 1;
+  min-width: 160px;
+}
+
+.project img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 160px;
+  height: auto;
+}
+
+/* CONTACT & FOOTER */
+#contact {
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px 0;
+  text-align: center;
+}
+
 
