@@ -85,16 +85,15 @@ hr {
   margin-bottom: 40px;
 }
 
+/* Remove extra margin at the bottom of the list */
 #about ul {
-  list-style: disc outside;      /* bullet outside the text block */
-  padding-left: 30px;            /* space for bullets */
-  margin: 5px 0;                 /* space above and below the list */
+  margin-bottom: 5px; /* reduces space after the bullets */
+  padding-left: 30px; /* keeps bullets aligned */
 }
 
-/* Individual list items */
-#about ul li {
-  margin: 0;                     /* remove extra spacing after each item */
-  line-height: 1.4;              /* tighter line spacing */
+/* Optional: adjust margin for paragraph following the list */
+#about ul + p {
+  margin-top: 5px; /* reduces space between the list and this paragraph */
 }
 /* Layout for the top part (image + intro) */
 .about-top {
