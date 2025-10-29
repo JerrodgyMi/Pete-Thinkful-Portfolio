@@ -109,9 +109,9 @@ hr {
 
 /* Move "Hi! I'm Pete Thinkful" header to the far right */
 .about-text h3 {
-  text-align: right;
+  text-align: right;         /* keep heading text on the right side */
+  margin-right: 40px;        /* adjust this value until it looks centered */
 }
-
 /* Background section below */
 .about-background {
   margin-top: 40px;
