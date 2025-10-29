@@ -141,14 +141,13 @@ hr {
   line-height: 1.4;              /* keep text compact */
 }
 /* Optional: adjust images in about section */
-#about img {
+#about img:not(.about-image) {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
   display: block;
   margin: 15px 0;
 }
-
 /* Right-side text block */
 .about-text {
   flex: 1;
