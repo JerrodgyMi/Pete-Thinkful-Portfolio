@@ -124,27 +124,41 @@ hr {
 
 
 /* ===== PORTFOLIO SECTION ===== */
-#portfolio {
-  width: 600px;
-  margin: 0 auto;
-  font-size: 14px;
-  padding: 40px 0;
-}
-
-/* Display all project items on one row */
-.portfolio-gallery {
+/* Portfolio section wrapper */
+.portfolio-section {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  text-align: center;
-  flex-wrap: nowrap; /* Force single row */
+  justify-content: space-around; /* evenly spaced items */
+  align-items: flex-start; /* align images/text at the top */
+  flex-wrap: wrap; /* makes it responsive (wraps on smaller screens) */
+  gap: 30px; /* spacing between items */
+  margin-top: 30px;
 }
 
-/* Each project shows image + text vertically stacked inside */
+/* Each project item */
 .project {
-  flex: 1;
-  min-width: 160px;
+  flex: 1 1 300px; /* grow/shrink with a minimum width */
+  max-width: 350px;
+  text-align: center; /* center images and text */
+}
+
+/* Image styling */
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+/* Project titles */
+.project h3 {
+  margin: 10px 0 8px;
+}
+
+/* Optional: add hover effect */
+.project:hover {
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
 }
 
 .project img {
