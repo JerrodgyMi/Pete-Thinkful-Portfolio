@@ -126,28 +126,44 @@ hr {
 /* Portfolio section wrapper */
 /* Portfolio container */
 /* Portfolio section container */
+/* Container for horizontal row */
 .portfolio-section {
   display: flex;
-  flex-direction: row;       /* arrange items horizontally */
-  justify-content: center;   /* center them as a group */
-  align-items: flex-start;   /* align along the top */
-  flex-wrap: nowrap;         /* prevent wrapping to the next line */
-  gap: 30px;                 /* space between each project */
+  flex-direction: row;       /* horizontal alignment */
+  justify-content: center;   /* center row in the page */
+  align-items: flex-start;   /* align top of each card */
+  gap: 30px;                 /* space between cards */
+  flex-wrap: nowrap;         /* keep single row */
+  overflow-x: auto;          /* allow horizontal scroll if needed */
+  padding-bottom: 10px;
 }
 
-/* Each project card */
+/* Each portfolio card */
 .project {
-  flex: 0 0 auto;            /* keep each project its natural width */
-  text-align: center;
+  display: flex;             /* make the card a flex container */
+  flex-direction: column;    /* stack image, h3, p vertically */
+  align-items: center;       /* center everything horizontally within the card */
+  flex: 0 0 auto;            /* prevent shrinking/growing */
+  text-align: center;        /* ensure text is centered */
+  width: 250px;              /* optional: fixed width for uniformity */
 }
 
-/* Image styling */
+/* Images */
 .project img {
-  display: block;
-  width: 250px;              /* adjust width as you like */
+  width: 100%;               /* fill the card width */
   height: auto;
   border-radius: 10px;
   margin-bottom: 10px;
+}
+
+/* Titles */
+.project h3 {
+  margin: 5px 0;
+}
+
+/* Text below each image */
+.project p {
+  margin: 5px 0 0;
 }
 
 /* CONTACT & FOOTER */
