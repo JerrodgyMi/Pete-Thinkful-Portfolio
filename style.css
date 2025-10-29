@@ -1,98 +1,4 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
-
-body {
-  color: #003049;
-  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
-  background-color: #eae2b7;
-}
-
-/* HEADER */
-header {
-  display: flex;
-  justify-content: space-between; /* places h1 on the left, nav on the right */
-  align-items: center; /* vertically centers them */
-  width: 600px; /* match main content width */
-  margin: 0 auto; /* center the header */
-  padding-bottom: 20px;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", Times, serif;
-  text-align: center;
-}
-
-/* Navigation bar horizontally aligned */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: #003049;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #f77f00;
-}
-
-article {
-  padding: 50px 0;
-}
-
-article div {
-  text-align: center;
-  width: 100%;
-}
-
-a:link {
-  color: #d62828;
-}
-
-a:hover {
-  color: #f77f00;
-}
-
-p {
-  line-height: 1.5;
-}
-
-footer p {
-  text-align: center;
-}
-
-/* Constrain main content width */
-div {
-  margin: auto;
-  width: 600px;
-}
-
-img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-}
-
-hr {
-  border: 2px solid #003049;
-}
-
-/* Pete's circular image */
-.image-circle {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 2px solid #003049;
-}
-
 /* ABOUT SECTION DESIGN UPDATE */
 #about {
   width: 600px;
@@ -100,57 +6,35 @@ hr {
   padding: 40px 0;
 }
 
+/* Container for Pete’s image and intro text */
 .about-top {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: row-reverse; /* ⬅️ flips order so image is on the left */
+  justify-content: center;     /* center horizontally */
+  align-items: center;         /* center vertically */
+  gap: 30px;
+  text-align: left;
 }
 
-.about-text {
+/* Each side shares center space evenly */
+.about-text,
+.about-image {
   flex: 1;
 }
 
-.about-image {
-  flex: 0 0 auto;
+/* Image styling */
+.about-image img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 2px solid #003049;
+  max-width: 180px;
+  height: auto;
 }
 
+/* Pete’s background section below */
 .about-background {
   margin-top: 30px;
+  text-align: left;
 }
 
-/* PORTFOLIO SECTION DESIGN UPDATE */
-#portfolio {
-  width: 600px;
-  margin: 0 auto;
-  font-size: 14px; /* Changed font size */
-  padding: 40px 0;
-}
-
-.portfolio-gallery {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 20px;
-  text-align: center;
-}
-
-.project {
-  flex: 1;
-  min-width: 160px;
-}
-
-.project img {
-  display: block;
-  margin: 0 auto 10px;
-}
-
-/* CONTACT & FOOTER */
-#contact {
-  width: 600px;
-  margin: 0 auto;
-  padding: 40px 0;
-  text-align: center;
-}
