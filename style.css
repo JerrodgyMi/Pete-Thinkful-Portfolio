@@ -9,20 +9,30 @@ body {
 }
 
 /* Set the font family for any h1, h2, or h3 heading */
+header {
+  display: flex;
+  justify-content: space-between; /* places h1 on the left, nav on the right */
+  align-items: center; /* vertically centers them */
+  width: 600px; /* match your main content width */
+  margin: 0 auto; /* center the header on the page */
+  padding-bottom: 20px;
+}
+
 h1,
 h2,
 h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
 }
-nav ul{
-  list-style-type: none;
+
+nav ul {
+  list-style: none;
   display: flex;
-  justify-content: center;
   gap: 30px;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
 article {
   padding: 50px 0;
 }
