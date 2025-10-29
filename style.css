@@ -101,8 +101,9 @@ hr {
 }
 
 .about-text h2 {
-  text-align: left;
-  margin-bottom: 10px;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  width: 100%;
 }
 
 .about-text h3 {
