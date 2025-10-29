@@ -82,19 +82,17 @@ hr {
   width: 600px;
   margin: 0 auto;
   padding: 40px 0;
+  text-align: center;
 }
 
-/* Container for About title, text, and image */
 .about-top {
   display: flex;
-  flex-direction: row-reverse; /* image left, text right */
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   gap: 30px;
   text-align: left;
-  position: relative;
 }
-
 /* Align “About” heading inline with intro text */
 .about-text {
   flex: 1;
