@@ -129,15 +129,16 @@ hr {
 /* Container for horizontal row */
 .portfolio-section {
   display: flex;
-  flex-direction: row;       /* horizontal alignment */
-  justify-content: center;   /* center row in the page */
-  align-items: flex-start;   /* align top of each card */
-  gap: 30px;                 /* space between cards */
-  flex-wrap: nowrap;         /* keep single row */
-  overflow-x: auto;          /* allow horizontal scroll if needed */
-  padding-bottom: 10px;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;       /* adds space on all sides */
+  box-sizing: border-box; /* ensures padding doesn’t break layout */
 }
-
+.portfolio-section {
+  scroll-behavior: smooth;
+}
 /* Each portfolio card */
 .project {
   display: flex;             /* make the card a flex container */
