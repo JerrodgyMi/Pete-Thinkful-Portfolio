@@ -108,6 +108,7 @@ hr {
 
 /* Bullet Lists */
 /* About section list */
+/* About section list */
 #about ul {
   list-style-position: outside;  /* bullet outside the text block */
   padding-left: 20px;            /* space for bullets */
