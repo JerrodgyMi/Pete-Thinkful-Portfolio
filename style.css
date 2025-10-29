@@ -108,22 +108,18 @@ hr {
 
 /* Bullet Lists */
 #about ul {
-  list-style: disc outside;   /* bullets outside the text block */
-  padding-left: 30px;         /* aligns bullets with text */
-  margin: 5px 0;              /* tight spacing above/below list */
+  list-style-type: disc;        /* default bullet type */
+  list-style-position: outside; /* bullets outside text block */
+  padding-left: 20px;           /* controls distance from container edge */
+  margin: 5px 0;                /* space above/below the list */
 }
-
-/* Individual List Items */
-#about ul li {
-  margin: 0;                  /* remove extra spacing */
-  line-height: 1.4;           /* tighter line spacing */
-}
-
-/* Reduce space between bullets and following paragraph */
 #about ul + p {
-  margin-top: 5px;            /* pulls text closer to the list */
+  margin-top: 5px;  /* reduce space between the list and the paragraph */
 }
-
+#about ul li {
+  margin: 0;                    /* remove extra spacing between items */
+  line-height: 1.4;             /* keeps list compact */
+}
 /* Optional: adjust images in about section */
 #about img {
   max-width: 100%;
