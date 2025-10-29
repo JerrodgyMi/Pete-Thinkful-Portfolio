@@ -95,14 +95,9 @@ hr {
 
 /* Make the image circular and fixed size */
 .about-image {
-  border-radius: 50%;
-  border: 2px solid #003049;
-  width: 150px;             /* adjust as desired */
-  height: 150px;            /* ensures circle shape */
-  object-fit: cover;        /* prevents distortion */
-  flex-shrink: 0;           /* prevents image from resizing */
+  display: block;
+  background-color: pink; /* test visibility */
 }
-
 /* Text next to image */
 .about-text {
   flex: 1;                  /* take remaining space */
