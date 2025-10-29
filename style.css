@@ -78,35 +78,52 @@ hr {
 }
 
 /* ===== ABOUT SECTION ===== */
+/* ABOUT SECTION */
 #about {
   width: 600px;
   margin: 0 auto;
   padding: 40px 0;
-  text-align: center;
 }
 
+/* Swap image to the left, text to the right */
 .about-top {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row; /* <- changed from row-reverse */
   justify-content: center;
   align-items: center;
   gap: 30px;
-  text-align: left;
 }
-/* Align “About” heading inline with intro text */
+
+/* Ensure image is centered vertically */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Align text to the left, but center h2 horizontally */
 .about-text {
   flex: 1;
-}
-
-.about-text h2 {
-  text-align: center;
-  margin: 0 auto 20px auto;
-  width: 100%;
-}
-
-.about-text h3 {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically align h2 with h4 */
+}
+
+/* Center h2 horizontally within text area */
+.about-text h2, .about-text h4 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Optional: ensure spacing between headings looks nice */
+.about-text h3 {
   margin-top: 0;
+}
+
+.about-text h4 {
+  margin-top: 20px;
 }
 
 .about-image {
