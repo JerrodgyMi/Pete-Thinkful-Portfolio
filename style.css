@@ -125,20 +125,21 @@ hr {
 
 /* ===== PORTFOLIO SECTION ===== */
 /* Portfolio section wrapper */
+/* Portfolio container */
 .portfolio-section {
   display: flex;
-  justify-content: space-around; /* evenly spaced items */
-  align-items: flex-start; /* align images/text at the top */
-  flex-wrap: wrap; /* makes it responsive (wraps on smaller screens) */
-  gap: 30px; /* spacing between items */
-  margin-top: 30px;
+  flex-direction: row; /* horizontal alignment */
+  justify-content: center; /* centers the row within the page */
+  align-items: flex-start; /* aligns items along the top edge */
+  gap: 30px; /* space between each project */
+  overflow-x: auto; /* optional: allows horizontal scrolling if items overflow */
+  padding: 20px 0;
 }
 
 /* Each project item */
 .project {
-  flex: 1 1 300px; /* grow/shrink with a minimum width */
-  max-width: 350px;
-  text-align: center; /* center images and text */
+  flex: 0 0 300px; /* fixed width; don't shrink or grow */
+  text-align: center;
 }
 
 /* Image styling */
@@ -146,19 +147,15 @@ hr {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  display: block;
-  margin: 0 auto 15px auto;
+  margin-bottom: 10px;
 }
 
-/* Project titles */
-.project h3 {
-  margin: 10px 0 8px;
-}
-
-/* Optional: add hover effect */
-.project:hover {
-  transform: translateY(-5px);
-  transition: transform 0.2s ease-in-out;
+/* Optional: consistent card look */
+.project {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .project img {
