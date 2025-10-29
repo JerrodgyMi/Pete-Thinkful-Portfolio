@@ -79,64 +79,48 @@ hr {
 
 /* ===== ABOUT SECTION ===== */
 /* ABOUT SECTION */
-#about {
-  width: 600px;
-  margin: 0 auto;
-  padding: 40px 0;
+/* Center the h2 "About" */
+#about h2 {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-/* Swap image to the left, text to the right */
+/* Flexbox layout for the section */
 .about-top {
   display: flex;
-  flex-direction: row; /* <- changed from row-reverse */
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  align-items: center; /* vertically aligns items */
+  justify-content: space-between; /* space between left and right */
+  gap: 20px;
 }
 
-/* Ensure image is centered vertically */
+/* About image styling */
 .about-image {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-/* Align text to the left, but center h2 horizontally */
+/* Right-side text block (Hi! I'm Pete Thinkful) */
 .about-text {
   flex: 1;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* vertically align h2 with h4 */
+  text-align: center; /* keep content centered within the right column */
+  align-self: flex-start; /* optional: keeps it aligned with top of image */
 }
 
-/* Center h2 horizontally within text area */
-.about-text h2, .about-text h4 {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/* Optional: ensure spacing between headings looks nice */
+/* Align the "Hi! I'm Pete Thinkful" to the far right */
 .about-text h3 {
-  margin-top: 0;
+  text-align: right;
 }
 
-.about-text h4 {
-  margin-top: 20px;
-}
-
-.about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* Pete's Background section aligned with About heading vertically */
 .about-background {
-  margin-top: 30px;
-  text-align: left;
+  flex: 1;
 }
+
+.about-background h3 {
+  text-align: center; /* center "Pete's Background" under About */
+}
+
 
 /* ===== PORTFOLIO SECTION ===== */
 #portfolio {
