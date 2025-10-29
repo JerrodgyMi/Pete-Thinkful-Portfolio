@@ -93,7 +93,7 @@ hr {
 
 /* Optional: adjust margin for paragraph following the list */
 #about ul + p {
-  margin-top: 5px; /* reduces space between the list and this paragraph */
+  margin-top: 8px; /* reduces space between the list and this paragraph */
 }
 /* Layout for the top part (image + intro) */
 .about-top {
