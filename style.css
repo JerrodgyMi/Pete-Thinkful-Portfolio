@@ -78,64 +78,53 @@ hr {
 }
 
 /* ===== ABOUT SECTION ===== */
-/* ABOUT SECTION */
-/* Center the h2 "About" */
 #about {
-  max-width: 800px;          /* optional: control width */
-  margin: 0 auto;            /* center on the page */
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
 }
+
 .about-top {
   display: flex;
-  align-items: center;      /* vertically center the text next to image */
-  gap: 20px;                /* space between image and text */
+  align-items: center;
+  gap: 20px;
 }
 
-/* Make the image circular and fixed size */
-.about-image {
-  display: block;
-  background-color: pink; /* test visibility */
-}
-/* Text next to image */
+
 .about-text {
-  flex: 1;                  /* take remaining space */
-  text-align: left;         /* align text naturally */
+  flex: 1;
+  text-align: left;
 }
-/* About Section Headings */
+
 #about h2 {
-  text-align: center;         /* center "About" */
+  text-align: center;
   margin-bottom: 30px;
 }
 
 #about .about-top h3 {
-  text-align: left;           /* aligns "Hi! I'm Pete Thinkful" */
+  text-align: left;
   margin-bottom: 15px;
-  padding-left: 0;            /* optional if needed */
+  padding-left: 0;
 }
 
-/* Paragraphs */
 #about p {
-  margin: 10px 0;             /* spacing between paragraphs */
+  margin: 10px 0;
   text-align: left;
 }
 
-/* Bullet Lists */
-/* About section list */
-/* About section list */
 #about ul {
-  list-style-position: outside;  /* bullet outside the text block */
-  padding-left: 20px;            /* space for bullets */
-  margin: 5px 0;                 /* tight spacing above/below the list */
+  list-style-position: outside;
+  padding-left: 20px;
+  margin: 5px 0;
 }
 
-/* Individual list items */
 #about ul li {
-  margin: 0;                     /* remove extra spacing after each item */
-  line-height: 1.4;              /* keep text compact */
+  margin: 0;
+  line-height: 1.4;
 }
-/* Optional: adjust images in about section */
+
 #about img:not(.about-image) {
   max-width: 100%;
   height: auto;
@@ -143,17 +132,16 @@ hr {
   display: block;
   margin: 15px 0;
 }
-/* Right-side text block */
+
 .about-text {
   flex: 1;
-  text-align: center; /* centers text under "Hi! I'm Pete Thinkful" */
+  text-align: center;
 }
 
-/* Move "Hi! I'm Pete Thinkful" header to the far right */
 .about-text h3 {
   text-align: center;
 }
-/* Background section below */
+
 .about-background {
   margin-top: 40px;
   text-align: center;
@@ -163,52 +151,69 @@ hr {
   margin-bottom: 15px;
 }
 
-
 /* ===== PORTFOLIO SECTION ===== */
-/* Portfolio section wrapper */
-/* Portfolio container */
-/* Portfolio section container */
-/* Container for horizontal row */
+#portfolio {
+  max-width: 1000px;
+  margin: 0 auto;              /* centers the whole section */
+  padding: 40px 0;
+  text-align: center;          /* centers the heading */
+}
+
+#portfolio h2 {
+  font-family: "Playfair Display", Times, serif;
+  font-size: 2em;
+  margin-bottom: 30px;         /* space below the heading */
+  color: #003049;
+}
+
+/* Container for the projects */
 .portfolio-section {
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 20px;       /* adds space on all sides */
-  box-sizing: border-box; /* ensures padding doesn’t break layout */
-}
-.portfolio-section {
-  scroll-behavior: smooth;
-}
-/* Each portfolio card */
-.project {
-  display: flex;             /* make the card a flex container */
-  flex-direction: column;    /* stack image, h3, p vertically */
-  align-items: center;       /* center everything horizontally within the card */
-  flex: 0 0 auto;            /* prevent shrinking/growing */
-  text-align: center;        /* ensure text is centered */
-  width: 250px;              /* optional: fixed width for uniformity */
+  justify-content: center;     /* centers the row */
+  align-items: flex-start;
+  gap: 40px;                   /* spacing between project cards */
+  overflow-x: hidden;          /* no scroll bar */
+  flex-wrap: nowrap;           /* all in one line */
 }
 
-/* Images */
-.project h3 {
-  margin-bottom: 10px;  /* space below the title before the image */
+/* Individual project card */
+.project {
+  width: 280px;                /* fits 3 across within 1000px container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
+/* Project images */
 .project img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-  margin-bottom: 10px;  /* space below image before the paragraph */
-}
-/* Text below each image */
-.project p {
-  margin: 5px 0 0;
+  margin-bottom: 10px;
+  object-fit: cover;
+  display: block;
 }
 
-/* CONTACT & FOOTER */
+/* Project titles */
+.project h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+  color: #003049;
+}
+
+/* Project descriptions */
+.project p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+
+
+/* ===== CONTACT & FOOTER ===== */
 #contact {
   width: 600px;
   margin: 0 auto;
