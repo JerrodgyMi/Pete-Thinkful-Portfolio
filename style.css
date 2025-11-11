@@ -167,23 +167,18 @@ hr {
 }
 
 /* Container for the projects */
+/* Portfolio layout */
 .portfolio-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;     /* centers the row */
-  align-items: flex-start;
-  gap: 40px;                   /* spacing between project cards */
-  overflow-x: hidden;          /* no scroll bar */
-  flex-wrap: nowrap;           /* all in one line */
+  display: flex;              /* Use Flexbox for horizontal alignment */
+  justify-content: space-around;  /* Evenly space the projects */
+  flex-wrap: wrap;            /* Allow wrapping on smaller screens */
+  gap: 20px;                  /* Add some space between items */
+  text-align: center;         /* Center text under images */
 }
 
-/* Individual project card */
 .project {
-  width: 280px;                /* fits 3 across within 1000px container */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  flex: 1 1 30%;              /* Each project takes up roughly one-third of the row */
+  max-width: 300px;           /* Prevent items from getting too wide */
 }
 
 /* Project images */
